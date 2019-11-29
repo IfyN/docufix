@@ -1,231 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Docufix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#333" />
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/nav-footer.css">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/thecavemann/image/upload/v1571839870/logo_g4kuoa.png"/>
+  <style>
 
-   <!-- links -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link
-            href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap"
-            rel="stylesheet"
-        />
-
-   <style>
-    .about-body{
-        background: #E5FAFA;
-        font-family: Ubuntu;
+    * {
+      box-sizing: border-box;
     }
-    .col-grey{
-        background-color: #C4C4C4;
-        padding:1rem 2rem;
-    }
-
-    .container-90{
-      max-width: 95%;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Ubuntu, sans-serif;
+      overflow-x: hidden;
     }
 
-    footer {
-      margin-top: 25px;
+    .top-img {
+      width: 95%;
+      margin: 20px auto;
     }
 
-    .about-title{
+    img {
+      max-width: 100%;
+    }
+
+    h2 {
+      margin: 40px 0px 100px 70px;
+      font-size: 48px;
+      text-transform: uppercase;
+      line-height: 56px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 75%;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .col {
+      text-align: center;
+      font-size: 28.69px;
+      line-height: 43px;
+    }
+
+    .col img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .about-text {
+      background-color: #3D9BDA;
+      width: 95%;
+      margin: 40px auto 30px;
+      padding: 20px 40px;
+      color: white;
       font-weight: bold;
+      font-size: 23px;
+      line-height: 41px;
     }
 
-    @media (max-width: 800px){
-      .col-grey{
-         width:100%;
-         max-width: 100%;
-         margin-bottom: 1rem;
-      }
-
-      .about-col-row{
-         flex-direction: column;
-         margin-bottom: 0;
-      }
+    .about-text h4 {
+      text-transform: uppercase;
+      text-decoration: underline;
     }
 
+    /*ul {
+      margin: 0;
+      padding: 0;
+    }*/
 
-</style>
+    @media (max-width: 880px) {
+      .col {
+        width: 45%;
+        margin: 2.5%;
+      }
+
+      .about-text {
+        font-weight: normal;
+      }
+
+      .col h4 {
+        font-size: 20px;
+      }
+
+      h2 {
+        margin: 40px 0px 70px 0px;
+        text-align: center;
+      }
+    }
+    @keyframes bottom {
+				from {
+					transform: translateY(50%);
+					opacity: 0;
+				}
+				to {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes left {
+				from {
+					transform: translateX(-50%);
+					opacity: 0;
+				}
+				to {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+			@keyframes right {
+				from {
+					transform: translateX(50%);
+					opacity: 0;
+				}
+				to {
+					transform: translateX(0);
+					opacity: 1;
+				}
+      }
+      
+      @keyframes pop {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+  </style>
+  <script type="text/javascript" src ="//widget.instabot.io/jsapi/rokoInstabot.js" crossorigin>
+  apiKey: "vXj90M2ifAvu8fS739jFKepTXtES72ur59sGR5TPK9c="
+  </script>
 </head>
-<body class="about-body">
 
-      <nav class="navbar navbar-expand-lg navbar-dark pt-2" style="background-color:#121610;">
-            <a class="navbar-brand" href="index.html">
-               <h1 class="m-0 ml-5 text-white ">DOCUFIX</h1>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <a class="navbar-brand" href="index.html" id="logo">
+      <img src="https://res.cloudinary.com/mercyinyang/image/upload/v1571958826/Docufix/images/Group_262_phlpdg.png"width="150" height="45" viewBox="0 0 321 100" fill="none">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="btn">
+      <span><i class="fa fa-bars" aria-hidden="true" id="toggle"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="about_us.html">About Us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teampage.html">Team</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tools
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="fileupload.html">Compare files</a>
+            <a class="dropdown-item" href="grammarCheck.html">Grammar check</a>
+            <a class="dropdown-item" href="filedelimiter.html">Check for duplicates</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Support
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNavDropdown" class="navbar-collapse collapse">
-               <ul class="navbar-nav mr-auto">
-      
-               </ul>
-               <ul class="navbar-nav mr-5 ">
-      
-                  <li class="nav-item mr-5 ">
-                     <a class="nav-link font-weight-bold text-light " href="about_us.html">About Us</a>
-                  </li>
-                  <li class="nav-item mr-5">
-                     <a class="nav-link font-weight-bold text-light " href="teampage.html">Team</a>
-                  </li>
-                  <li class="nav-item mr-5">
-                     <a class="nav-link font-weight-bold text-light" href="https://hng.tech/" target="_blank">Sponsors</a>
-                  </li>
-                  
-               </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+              <a class="dropdown-item" href="use.html">Why Use Docufix</a>
+              <a class="dropdown-item" href="feedback.html">Contact Us</a>
+              <a class="dropdown-item" href="privacy.html">Privacy policy</a>
+              <a class="dropdown-item" href="t&c.html">Terms of Service</a>
             </div>
-         </nav>
-
-      <div class="container-fluid container-90">
-        <h1 class="about-title my-4 text-center">About Us</h1>
-        <div class="row about-col-row">
-            <div class="col col-grey mr-5">
-                <p>Compare Documents.</p>
-                <p>You now have the ability to compare two text documents that can be in different formats and see the highlighted difference in results. Know exactly what has been changed, paraphrased, or copied between two textual documents. This diff tool allows you to see the similarity in files quickly and easily.
-                </p>
-
-            </div>
-            
-            <div class="col col-grey"> 
-                <p>Compare online content by submitting urls.</p>
-                <p>Compare raw text – simply type in your text in a text box.</p>
-                <p>Compare text types</p>
-                <p>Compare text file types: html , txt , pdf , doc , docx , rtf ,     xml , ppt , pptx , odt , chm , epub , odp , ppsx.</p>
-                <p>Compare images with textual content using OCR: jpg , jpeg , png , bmp , gif</p>
-                <p>Upload files from these platforms</p>
-
-            </div>
-        </div>
-        <br>
-        <div class="row about-col-row">
-            <div class="col col-grey mr-5">
-                    <p>We offer many features and options for you to compare almost any type of textual content from files to live text, and URLs for free. Upload files from outside platforms like GoogleDocs, Dropbox, and OneDrive. Simply choose the text to compare and receive a full report with the text similarities immediately, plus the similarity percentage rate and similar word count.
-                    </p>
-
-            </div>
-            
-            <div class="col col-grey">
-                    <p>Dropbox</p>
-                    <p>Google Drive</p>
-                    <p>One Drive</p>
-                    <p>If you’re looking to see how similar a document is, don’t waste time going through comparing files manually. The comparison tool will highlight the similar results from files, URLs, and raw text in a few seconds.
-                    </p>
-                    <p>Be sure your paper is free of plagiarism with this simple  </p>
-            </div>
-        </div>
-        <br>
-        <div class="row about-col-row">
-            <div class="col col-grey mr-5">
-                <p>With the Copyleaks compare documents tool, you can compare documents of these types:
-                </p>
-            </div>
-            
-            <div class="col col-grey">
-                <p>Compare documents tool. Know in a minute how similar your          content is to other files, URLs, and raw text.
-                </p>
-                <p>Compare your files and urls for free with the Copyleaks            Comparison tool today.</p>
-
-            </div>
-        </div>
-
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upgrade.html" target="_blank">Upgrade</a>
+          </li>
+      </ul>
     </div>
+  </nav>
+  <div class="top-img">
+    <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1571828998/about/office_nkfgse.png" alt="office" />
+  </div>
 
-    <footer class="page-footer font-small mdb-color pt-4" style="background: #C4C4C4;">
+  <h2 class="heading">About Us</h2>
 
-        <div class="container text-center text-md-left">
+  <div class="container">
+    <div class="col pop">
+      <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1571828993/about/easy_ycvxfa.png" alt="Easy"/>
+      <h4>Simple & Easy</h4>
+    </div>
+    <div class="col pop">
+      <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1571828993/about/innovative_yvqbzf.png"
+        alt="Innovative" />
+      <h4>Innovative</h4>
+    </div>
+    <div class="col pop">
+      <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1571828993/about/effective_kfchpy.png"
+        alt="Effective" />
+      <h4>Effective</h4>
+    </div>
+    <div class="col pop">
+      <img src="https://res.cloudinary.com/theonlybakare/image/upload/v1571828993/about/responsive_iwk1jy.png"
+        alt="Responsive" />
+      <h4>Responsive</h4>
+    </div>
+  </div>
 
-          <div class="row text-center text-md-left mt-3 pb-3">
+  <div class="about-text">
+    <div>
+      <h4>Who we are</h4>
+      <p>Docufix is one of the most innovative Technology of our age. Built solidly with the latest technical tools for
+      file and data management. This Magnificient tool was built by the most intellectual young coders from HNGi6
+      Internship.</p>
+    </div>
+    <div>
+      <h4>What we do</h4>
+      <p>With the help of our finest refined data management alogorithm, we help you sort, arrange, compare and extract
+        information from different file formats. We give you the Super power to compare two totally different documents in
+        different file formats. With Docufix you have the potential to know exactly the difference and similarities
+        between two files, extract texts from the files and also download the files in file formats like: .docx, .pdf</p>
+    </div>
+    <div>
+      <h4>How it works</h4>
+      <p>This tool is as easy as picking up your mobile phone to send a text message. Simply go to the comparison page,
+      paste your copied texts to compare, or click on file upload your file type and extract and compare.</p>
+    </div>
+    <div>
+      <h4>Supported file formats</h4>
+      <p>Docufix currently supports the following file formats</p>
+    </div>
+    <div>
+      <ul>
+        <ol>.txt</ol>
+        <ol>.pdf</ol>
+        <ol>.docx</ol>
+        <ol>.json</ol>
+        <ol>.csv</ol>
+        <ol>.xml</ol>
+        </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="section-one">
+      <section>
+        <h4>DOCUFIX</h4>
+        <p>We help you arrange, sort, compare and extract information from different file formats</p>
+  
+        <p class="text-two">This app was built by <a href="https://hng.tech/" target="_blank">HNGi6</a> interns</p>
+      </section>
+      <section>
+        <ul>
+          <li><a href="about_us.html">About us</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="t&c.html">Terms of service</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-line"></div>
+    <div class="section-two">
+      <section class="icons">
+        <a href="https://twitter.com/hnginternship">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </section>
+      <section class="copy">
+          &copy; 2019 Copyright: Docufix
+      </section>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="/daveScroll.js"></script>
+    <script>
+      const firstHeading = document.querySelectorAll('.pop h4');
+      const images = document.querySelectorAll('.pop img');
+      const heading = document.querySelector('.heading');
+      const content = document.querySelectorAll('.about-text div');
+      const leftCtn = document.querySelector('.left');
+			const rightCtn = document.querySelector('.right');
 
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Docufix</h6>
-              <p>We help you arrange, sort and put your files and data in other for easy management</p>
-            </div>
+      scroll(heading, 'left');
+			scroll(leftCtn, 'left');
+			scroll(rightCtn, 'right');
 
-            <hr class="w-100 clearfix d-md-none">
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <p>
-                <a href="about_us.html">How it works</a>
-              </p>
-              <p>
-                <a href="teampage.html">Our Team</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <hr class="w-100 clearfix d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <p>
-                <a href="index.html">Home Page</a>
-              </p>
-              <p>
-                <a href="#!">Privacy Policy</a>
-              </p>
-            </div>
-
-          </div>
-
-          <hr>
-
-          <div class="row d-flex align-items-center">
-
-            <div class="col-md-7 col-lg-8">
-
-              <p class="text-center text-md-left">© 2019 Copyright:
-                <a href="https://hng/internship">
-                  <strong> Docufix</strong>
-                </a>
-              </p>
-
-            </div>
-
-            <div class="col-md-5 col-lg-4 ml-lg-0">
-
-              <div class="text-center text-md-right">
-                <ul class="list-unstyled list-inline">
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-google-plus-g"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    
-
-   
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/7967e81f77.js" crossorigin="anonymous"></script>
+      firstHeading.forEach(h => scroll(h, 'bottom'));
+      images.forEach(img => scroll(img, 'pop'));
+      content.forEach(ctn => scroll(ctn, 'left'));
+    </script>
 </body>
+
 </html>
